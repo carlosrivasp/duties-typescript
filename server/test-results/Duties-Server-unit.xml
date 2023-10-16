@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="3" errors="0" time="0.733">
+  <testsuite name="Tests for the API" errors="0" failures="3" skipped="0" timestamp="2023-10-16T09:08:08" time="0.401" tests="3">
+    <testcase classname="Tests for the API Should return duty list" name="Tests for the API Should return duty list" time="0.02">
+      <failure>Error: connect ECONNREFUSED ::1:80
+    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\core\AxiosError.js:89:14)
+    at RedirectableRequest.handleRequestError (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\adapters\http.js:593:25)
+    at RedirectableRequest.emit (node:events:517:28)
+    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\follow-redirects\index.js:14:24)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Tests for the API Should create a new duty" name="Tests for the API Should create a new duty" time="0.007">
+      <failure>Error: connect ECONNREFUSED ::1:80
+    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\core\AxiosError.js:89:14)
+    at RedirectableRequest.handleRequestError (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\adapters\http.js:593:25)
+    at RedirectableRequest.emit (node:events:517:28)
+    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\follow-redirects\index.js:14:24)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Tests for the API Should get an specific duty" name="Tests for the API Should get an specific duty" time="0.002">
+      <failure>Error: connect ECONNREFUSED ::1:80
+    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\core\AxiosError.js:89:14)
+    at RedirectableRequest.handleRequestError (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\axios\lib\adapters\http.js:593:25)
+    at RedirectableRequest.emit (node:events:517:28)
+    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\carlo\Desktop\duties-typescript\server\node_modules\follow-redirects\index.js:14:24)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Test duties paths" errors="0" failures="0" skipped="0" timestamp="2023-10-16T09:08:09" time="0.135" tests="2">
+    <testcase classname="Test duties paths Should get duties list adding two new entries" name="Test duties paths Should get duties list adding two new entries" time="0.042">
+    </testcase>
+    <testcase classname="Test duties paths Should get duties list, adding, updating and deleting a duty" name="Test duties paths Should get duties list, adding, updating and deleting a duty" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="Duties Repository Test" errors="0" failures="0" skipped="0" timestamp="2023-10-16T09:08:09" time="0.112" tests="5">
+    <testcase classname="Duties Repository Test Test getDuties Should get all duties" name="Duties Repository Test Test getDuties Should get all duties" time="0.037">
+    </testcase>
+    <testcase classname="Duties Repository Test Test getDuty Should get just one duty" name="Duties Repository Test Test getDuty Should get just one duty" time="0.002">
+    </testcase>
+    <testcase classname="Duties Repository Test Test createDuty Should create a new duty" name="Duties Repository Test Test createDuty Should create a new duty" time="0.001">
+    </testcase>
+    <testcase classname="Duties Repository Test Test updateDuty Should update a duty" name="Duties Repository Test Test updateDuty Should update a duty" time="0.002">
+    </testcase>
+    <testcase classname="Duties Repository Test Test deleteDuty Should delete just one duty" name="Duties Repository Test Test deleteDuty Should delete just one duty" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
