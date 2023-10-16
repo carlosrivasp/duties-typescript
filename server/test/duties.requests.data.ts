@@ -14,3 +14,13 @@ export async function createDutyRequest(axios: AxiosInstance, duty: DutyInput): 
 export async function getDutyRequest(axios: AxiosInstance, id: string): Promise<AxiosResponse<Duty>> {
   return axios.get(`/duty/${id}`)
 }
+
+export async function updateDutyRequest(axios: AxiosInstance, duty: Duty): Promise<AxiosResponse<string>> {
+  return axios.put(`/duty/${duty.id}`, {
+    name: duty.name,
+  });
+}
+
+export async function deleteDutyRequest(axios: AxiosInstance, id: string): Promise<AxiosResponse<string>> {
+    return axios.delete(`/duty/${id}`);
+  }

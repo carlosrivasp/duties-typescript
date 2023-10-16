@@ -9,7 +9,7 @@ describe('Tests for the API', () => {
 
   beforeAll(async () => {
     client = axios.create({
-      baseURL: 'http://localhost:4000',
+      baseURL: 'localhost:4000',
       timeout: 60000
     })
   })
@@ -34,4 +34,17 @@ describe('Tests for the API', () => {
       const duty: Duty = response.data
       expect(duty).toBeDefined()
     })
+
+    it('Should update an specific duty', async () => {
+      const response = await dutiesRequest.updateDutyRequest(axios, {id:'20', name:'hola'})
+      expect(response.status).toEqual(200)
+      const id: string = response.data
+      expect(id).toBeDefined()
+    })
+
+    it('Should delete an specific duty', async () => {
+      const response = await dutiesRequest.deleteDutyRequest(axios,'20')
+      expect(response.status).toEqual(200)
+    })
+
   });
