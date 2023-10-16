@@ -36,7 +36,7 @@ describe('Tests for the API', () => {
     })
 
     it('Should update an specific duty', async () => {
-      const response = await dutiesRequest.updateDutyRequest(axios, {id:'20', name:'hola'})
+      const response = await dutiesRequest.updateDutyRequest(axios, {id:'20', name:'Update Duty'})
       expect(response.status).toEqual(200)
       const id: string = response.data
       expect(id).toBeDefined()
